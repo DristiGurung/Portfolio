@@ -8,8 +8,8 @@
    text-decoration: none;
    scroll-behavior: smooth;
    scroll-padding-top: 2rem;
-
    font-family: "Poppins", sans-serif;
+  
  }
 
  :root {
@@ -36,6 +36,7 @@
    background: var(--bg-color);
    color: var(--text-color);
    scroll-behavior: smooth;
+   transition: all 400ms ease;
  }
 
  *::selection {
@@ -131,7 +132,7 @@
  }
 
  .home-img img {
-   width: 100%;
+   width: 80%;
  }
 
  .home-text span {
@@ -163,6 +164,7 @@
    margin-bottom: 1rem;
    font-size: 22px;
    color: var(--text-color);
+   transition: all 400ms ease;
  }
 
  .social a:hover {
@@ -175,6 +177,7 @@
    color: #fff;
    padding: 0.7rem 1.3rem;
    border-radius: 0.5rem;
+   transition: all 1s ease;
  }
 
  .btn:hover {
@@ -190,7 +193,7 @@
  }
 
  .about-img img {
-   width: 80%;
+   width: 60%;
    border-radius: 0.5rem;
  }
 
@@ -212,6 +215,9 @@
 
  .information .info-box .bx {
    font-size: 22px;
+ }
+ .info-box a{
+  color: var(--hue-color);
  }
 
  .information .info-box span {
@@ -318,16 +324,20 @@
    border-radius: 0.5rem;
    border-bottom: 2px solid var(--main-color);
    box-shadow: 0 2px 7px  hsl(var(--hue-color), 69%, 61%);
+   background: transparent;
+   transition: all 2s ease;
  }
 
  .services-box:hover {
-   background-color: hsl(var(--hue-color), 69%, 61%);
+   background: hsl(var(--hue-color), 69%, 61%);
+   
  }
 
  .services-box h3 {
    font-size: 1rem;
    font-weight: 600;
    margin: 0.7rem 0 0.4rem;
+   transition: all 400ms ease;
  }
 
  .services-box:hover h3 {
@@ -397,6 +407,7 @@
    text-transform: uppercase;
    letter-spacing: 1px;
    margin-left: 35%;
+   transition: all 400ms ease;
  }
 
  .contact-button:hover {
@@ -437,6 +448,10 @@
 
  .copyright a {
    color: #22cf91;
+ }
+
+ footer{
+  overflow-y: hidden;
  }
 
  /* For Mobile */
