@@ -8,6 +8,7 @@
    text-decoration: none;
    scroll-behavior: smooth;
    scroll-padding-top: 2rem;
+
    font-family: "Poppins", sans-serif;
  }
 
@@ -34,6 +35,7 @@
  body {
    background: var(--bg-color);
    color: var(--text-color);
+   scroll-behavior: smooth;
  }
 
  *::selection {
