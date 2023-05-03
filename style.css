@@ -15,7 +15,7 @@
  :root {
   --hue-color: 250;
    --main-color: hsl(var(--hue-color), 69%, 61%);
-   --bg-color: #fff;
+   --bg-color: #ebedd9;
    --text-color: #0f0c27;
    --hover: hsl(260, 100%, 51%);
    --big-font: 3.2rem;
@@ -30,6 +30,10 @@
  body.active {
    --text-color: #fff;
    --bg-color: #0f0c27;
+   background-image: url(img/tara2.jpg);
+   z-index: -50;
+   background-repeat: inherit;
+   width:fit-content;
  }
 
  body {
@@ -37,7 +41,9 @@
    color: var(--text-color);
    scroll-behavior: smooth;
    transition: all 400ms ease;
- }
+   background-image: url(img/tarawhite.png);
+
+ }    
 
  *::selection {
    color: var(--bg-color);
@@ -69,8 +75,9 @@
    background: var(--bg-color);
    padding: 13px 10%;
    transition: 0.2s;
-   box-shadow: -3px -3px 7px #ffffff73,
-     2px 2px 5px rgba(94, 104, 121, 0.288);
+   box-shadow: 
+     2px 2px 25px 1px hsl(var(--hue-color), 69%, 61%);
+    
  }
 
  header.shadow {
@@ -132,7 +139,7 @@
  }
 
  .home-img img {
-   width: 80%;
+   width: 100%;
  }
 
  .home-text span {
